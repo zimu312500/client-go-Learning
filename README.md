@@ -11,5 +11,6 @@ https://github.com/cloudnativeto/sig-k8s-source-code/issues/11
 - Index ---> Index["对象键"] = 对象Set
 
 ### 3.workqueue
-- 延迟队列是依靠waitingLoop实现延迟的。一致循环？
+- 延迟队列是依靠waitingLoop实现延迟的。一直循环？
+https://blog.csdn.net/weixin_42663840/article/details/81482553#%E5%BB%B6%E6%97%B6%E9%98%9F%E5%88%97
 - 令牌桶算法
