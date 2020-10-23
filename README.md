@@ -9,3 +9,7 @@ https://github.com/cloudnativeto/sig-k8s-source-code/issues/11
 - IndexFunc --> IndexFunc(Obj) (String[]) 根据对象利用索引函数生成对象键数组
 - Indices --> Indices["byUser"] = Index //Index为数据存储对象
 - Index ---> Index["对象键"] = 对象Set
+
+### 3.workqueue
+- 延迟队列是依靠waitingLoop实现延迟的。一致循环？
+- 令牌桶算法
