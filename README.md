@@ -12,7 +12,7 @@ https://github.com/cloudnativeto/sig-k8s-source-code/issues/11
 
 ### 3.workqueue
 - 延迟队列是依靠waitingLoop实现延迟的。一直循环？不是的，如果有元素会等到最早元素的时间，如果没有元素则一直等待。
-···
+```
   // 如果有序队列中没有元素，那就不用等一段时间了，也就是永久等下去
         // 如果有序队列中有元素，那就用第一个元素指定的时间减去当前时间作为等待时间，逻辑挺简单
         // 有序队列是用时间排序的，后面的元素需要等待的时间更长，所以先处理排序靠前面的元素
@@ -54,6 +54,6 @@ https://github.com/cloudnativeto/sig-k8s-source-code/issues/11
             }
         }
     }
-···
+```
 https://blog.csdn.net/weixin_42663840/article/details/81482553#%E5%BB%B6%E6%97%B6%E9%98%9F%E5%88%97
 - 令牌桶算法
